@@ -4,10 +4,9 @@
             <div class="card" style="width: calc( 100% - 20px); max-width: 15rem; margin: auto; margin-top: 10px; margin-bottom: 10px;"
             
             >         
-                <img src="{{course.img}}" class="cardimg-top" alt="...">  
-                {{course.images}}       
+                <img src="{{course.img}}" class="cardimg-top" alt="...">     
                 <div class="card-body">           
-                    <h5 class="card-title"> {{ course.title }} </h5>           
+                    <h5 class="card-title"> <a routerLink="course-detail/{{course.id}}">{{ course.title }} </a></h5>           
                     <p class="card-text"> {{ course.instructor }}</p>           
                     <p class="card-text"> {{ course.progress}} % completo</p>         
                 </div>       

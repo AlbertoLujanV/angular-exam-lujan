@@ -1,1 +1,18 @@
-<p>course-detail works! course detail</p>
+
+
+<div class="container"> 
+    <a href="javascript:void(0)" (click)="backClicked()">
+        ATRÁS
+       </a>  
+    <div class="card" style="margin: 10px 0; " *ngFor="let d of detail">     
+        <div class="card-body">       
+            <h5>{{ d.title}}</h5>       
+            <h6>{{ d.section }}</h6> 
+             
+            <div   *ngFor="let de of d.classes"  >
+                {{de}}
+            </div>   
+               
+        </div>   
+    </div> 
+</div> 

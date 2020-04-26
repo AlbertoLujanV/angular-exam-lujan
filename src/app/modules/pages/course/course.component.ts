@@ -29,6 +29,10 @@ export class CourseComponent implements OnInit {
     //this.cour = this.httpClient.get('https://ionicapp-7a398.firebaseio.com/galaxydemy/subjects.json');
   }
 
+  goArtist(id: string) {
+    this.router.navigate(['/course-detail/', id]);
+    // this.router.navigateByUrl('');
+  }
 
   
 }

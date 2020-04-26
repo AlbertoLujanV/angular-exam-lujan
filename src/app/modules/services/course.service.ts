@@ -19,8 +19,8 @@ export class CourseService {
     
   }
 
-  getArtist(id: string): Observable<Detail> {
-    return this.http.get<Detail>(`artists/${id}`);
+  getCourse(id: string) {
+    return this.http.get<Detail>(`https://ionicapp-7a398.firebaseio.com/galaxydemy/subject/${id}.json`);
   }
 
   

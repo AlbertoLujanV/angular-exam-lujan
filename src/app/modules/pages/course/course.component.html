@@ -1,0 +1,17 @@
+<div class="container" >   
+    <div class="row">     
+        <div class="col-12 col-sm-6 col-md-6 col-xl-3" *ngFor="let course of courses">       
+            <div class="card" style="width: calc( 100% - 20px); max-width: 15rem; margin: auto; margin-top: 10px; margin-bottom: 10px;"
+            
+            >         
+                <img src="{{course.img}}" class="cardimg-top" alt="...">  
+                {{course.images}}       
+                <div class="card-body">           
+                    <h5 class="card-title"> {{ course.title }} </h5>           
+                    <p class="card-text"> {{ course.instructor }}</p>           
+                    <p class="card-text"> {{ course.progress}} % completo</p>         
+                </div>       
+            </div>     
+        </div>   
+    </div> 
+</div>
